@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/varino');
+
+:root {
+  --fundo: rgb(41, 37, 34);
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: aliceblue;
+  background-color: var(--fundo);
+}
+
+header{
+  margin-top: 100px;
+}
+
+h1{
+  text-align: center;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: deeppink;
+  text-shadow: 2px 3px 10px rgb(255, 0, 136) ;
+  font-family: 'varino', sans-serif;
+  font-weight: lighter;
+
+}
+
+#container {
+  padding: 8px;
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: deeppink;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+#entrada_numero {
+  width: 30px;
+  transition-duration: 0.5s;
+  color: rgb(255, 128, 196);
+
+}
+
+#entrada_numero :active {
+  height: 20px;
+
+}
+
+div > p {
+  font-family: 'varino', sans-serif;
+  font-size: small;
+  font-weight: bold;
+  color: var(--fundo);
+}
+
+#select {
+  width: 120px;
+  height: 30px;
+}
+
+.interagivel {
+  color: aliceblue;
+  background-color: var(--fundo);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#botao {
+  font-family: 'varino', sans-serif;
+  font-size: small;
+  border: 0;
+  border-radius: 7px;
+  padding: 12px;
+  background-color: var(--fundo);
+  color: rgb(255, 164, 213);
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: deeppink;
+  text-shadow: 1px 2px 5px rgb(255, 0, 136);
+  width: 180px;
+  margin-right: 16px;
+}
+
+select > option {
+  color: rgb(255, 128, 196);
+}
+
+@keyframes botao {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
